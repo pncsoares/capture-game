@@ -1,0 +1,44 @@
+body {
+  padding: 0;
+  text-align: center;
+}
+
+#screen {
+  border: 1px solid #ccc;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  width: 400px;
+  height: 400px;
+  margin: 25px 25px 0 25px;
+  display: inline-block;
+  vertical-align: top;
+
+  -webkit-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.19);
+  -box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.19);
+}
+
+#title {
+  font-size: 100px;
+  font-family: "Star Jedi", arial;
+  line-height: 60px;
+}
+
+#subtitle {
+  font-size: 30px;
+  font-family: "Star Jedi", arial;
+  line-height: 20px;
+}
+
+.playerID {
+  font-weight: bold;
+  color: orange;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+}
+
+#score-table {
+  font-size: 25px;
+  font-family: "Star Jedi", arial;
+}
