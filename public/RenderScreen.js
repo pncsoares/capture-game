@@ -5,13 +5,13 @@ export default function renderScreen(screen, game, requestAnimationFrame, curren
 
     for (const playerId in game.state.players) {
         const player = game.state.players[playerId];
-        context.fillStyle = 'black';
+        context.fillStyle = 'darkgray';
         context.fillRect(player.x, player.y, 1, 1);
     }
 
     for (const fruitId in game.state.fruits) {
         const fruit = game.state.fruits[fruitId];
-        context.fillStyle = 'green';
+        context.fillStyle = 'red';
         context.fillRect(fruit.x, fruit.y, 1, 1);
     }
 
@@ -29,5 +29,5 @@ export default function renderScreen(screen, game, requestAnimationFrame, curren
 
 function clearScreen(context) {
     context.fillStyle = 'white';
-    context.clearRect(0, 0, 10, 10);
+    context.clearRect(0, 0, 30, 30);
 }

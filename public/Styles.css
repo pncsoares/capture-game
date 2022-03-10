@@ -1,6 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  /* color: rgba(130, 250, 195, 0.8); */
+  color: rgba(29, 180, 112, 0.9);
+}
+
+/* 208, 74, 70
+252, 181, 52
+44, 195, 67 */
+
 body {
-  padding: 0;
+  display: flex;
+  min-height: 100vh;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(208, 74, 70, 1);
+  padding: 0;
 }
 
 #screen {
@@ -8,26 +27,34 @@ body {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
   image-rendering: -moz-crisp-edges;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   margin: 25px 25px 0 25px;
-  display: inline-block;
   vertical-align: top;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
 
   -webkit-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.19);
   -box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.19);
 }
 
+#player {
+}
+
+#enemies {
+}
+
+#fruits {
+}
+
 #title {
   font-size: 100px;
-  font-family: "Star Jedi", arial;
   line-height: 60px;
 }
 
 #subtitle {
   font-size: 30px;
-  font-family: "Star Jedi", arial;
   line-height: 20px;
 }
 
@@ -40,5 +67,4 @@ body {
 
 #score-table {
   font-size: 25px;
-  font-family: "Star Jedi", arial;
 }
