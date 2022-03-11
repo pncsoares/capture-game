@@ -4,26 +4,44 @@
   box-sizing: border-box;
   margin: 0;
   font-family: "Courier New", Courier, monospace;
-  /* color: rgba(130, 250, 195, 0.8); */
-  color: rgba(29, 180, 112, 0.9);
 }
 
-/* 208, 74, 70
-252, 181, 52
-44, 195, 67 */
+h1 {
+  font-size: 3rem;
+  text-align: right;
+}
+
+h3 {
+  margin: 1rem;
+}
 
 body {
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: rgba(208, 74, 70, 1);
+  background-color: rgba(34, 40, 69, 1);
   padding: 0;
+  color: rgba(255, 255, 255, 1);
+}
+
+.title-focus {
+  color: rgba(130, 248, 194, 1);
+}
+
+.subtitle-focus {
+  color: rgba(250, 100, 100, 1);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 #screen {
-  border: 1px solid #ccc;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
   image-rendering: -moz-crisp-edges;
@@ -31,40 +49,66 @@ body {
   height: 500px;
   margin: 25px 25px 0 25px;
   vertical-align: top;
-  border-radius: 1rem;
   background-color: rgba(255, 255, 255, 0.9);
-
-  -webkit-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.19);
-  -box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.19);
-}
-
-#player {
-}
-
-#enemies {
-}
-
-#fruits {
-}
-
-#title {
-  font-size: 100px;
-  line-height: 60px;
-}
-
-#subtitle {
-  font-size: 30px;
-  line-height: 20px;
-}
-
-.playerID {
-  font-weight: bold;
-  color: orange;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 12px;
 }
 
 #score-table {
-  font-size: 25px;
+  font-size: 14px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+#score-table tr.header td {
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 8px;
+}
+
+#score-table tr.footer td {
+  border-top: 1px solid #CCC;
+  font-size: 11px;
+}
+
+#score-table td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#score-table .socket-id {
+  font-weight: normal;
+  color: #222;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block
+}
+
+#score-table .score-value {
+  font-weight: bold;
+  color: #000;
+  text-align: right;
+}
+
+#score-table .current-player {
+  color: rgba(44, 195, 67, 1);
+  font-weight: bold;
+}
+
+.subtitle {
+  margin: 1rem;
+}
+
+.player {
+  color: rgba(44, 195, 67, 1);
+  background-color: rgba(44, 195, 67, 1);
+}
+
+.enemy {
+  color: rgba(252, 181, 52, 1);
+  background-color: rgba(252, 181, 52, 1);
+}
+
+.fruit {
+  color: rgba(208, 74, 70, 1);
+  background-color: rgba(208, 74, 70, 1);
 }

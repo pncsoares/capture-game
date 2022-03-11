@@ -12,7 +12,9 @@ socket.on('connect', () => {
     console.log(`Player connected on Client with id: ${playerId}`);
 
     const screen = document.getElementById('screen');
-    renderScreen(screen, game, requestAnimationFrame, playerId);
+    const scoreTable = document.getElementById('score-table');
+
+    renderScreen(screen, game, scoreTable, requestAnimationFrame, playerId);
 });
 
 socket.on('setup', (state) => {

@@ -13,9 +13,22 @@
 </head>
 
 <body>
-    <h1>Capture as many objects as you can</h1>
-    <br><br>
-    <canvas id="screen" width="30" height="30"></canvas>
+    <h1><span class="title-focus">CAPTURE</span> AS MANY<br><span class="title-focus">OBJECTS</span> AS YOU CAN</h1>
+    <h3>BUT BE <span class="subtitle-focus">CAREFUL</span> WITH THE OTHER <span class="subtitle-focus">PLAYERS AROUND YOU</span></span>
+    </h3>
+    <div class="subtitle">
+        <label id="player-color" class="player">[]</label>
+        <label id="player-label">you</label>
+        <label id="enemy-color" class="enemy">[]</label>
+        <label id="player-label">enemies</label>
+        <label id="fruit-color" class="fruit">[]</label>
+        <label id="player-label">fruits</label>
+    </div>
+    <div class="container">
+        <canvas id="screen" width="30" height="30"></canvas>
+        <table id="score-table"></table>
+    </div>
+    
 </body>
 
 </html>
