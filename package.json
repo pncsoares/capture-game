@@ -1,7 +1,7 @@
 {
-  "name": "may-the-4th-backend",
+  "name": "capture-fruit",
   "version": "1.0.0",
-  "description": "May the 4th backend",
+  "description": "multiplayer game to capture fruit",
   "main": "Server.js",
   "type": "module",
   "scripts": {

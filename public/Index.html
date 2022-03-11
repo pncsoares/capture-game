@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🕹 Capture</title>
+    <link rel="stylesheet" href="./Styles.css">
+    <script src="./Index.js" type="module" defer></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <link href="https://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1><span class="title-focus">CAPTURE</span> AS MANY<br><span class="title-focus">OBJECTS</span> AS YOU CAN</h1>
+    <h3>BUT BE <span class="subtitle-focus">CAREFUL</span> WITH THE OTHER <span class="subtitle-focus">PLAYERS AROUND YOU</span></span>
+    </h3>
+    <div class="subtitle">
+        <label id="player-color" class="player">[]</label>
+        <label id="player-label">you</label>
+        <label id="enemy-color" class="enemy">[]</label>
+        <label id="player-label">enemies</label>
+        <label id="fruit-color" class="fruit">[]</label>
+        <label id="player-label">fruits</label>
+    </div>
+    <div class="container">
+        <canvas id="screen" width="30" height="30"></canvas>
+        <table id="score-table"></table>
+    </div>
+    
+</body>
+
+</html>
