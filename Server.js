@@ -1,13 +1,13 @@
 import express from 'express';
 import http from 'http';
 import { Server } from 'socket.io';
-import createGame from './public/Game.js';
+import createGame from './src/game.js';
 
 const app = express();
 const server = http.createServer(app);
 const sockets = new Server(server);
 
-app.use(express.static('public'));
+app.use(express.static('src'));
 
 const game = createGame();
 game.start();

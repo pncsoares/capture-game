@@ -1,11 +1,12 @@
-import createGame from './Game.js';
-import createKeyboardListener from './KeyboardListener.js';
-import renderScreen from './RenderScreen.js';
+import { io } from "socket.io-client";
+import createGame from './game.js';
+import createKeyboardListener from './keyboardListener.js';
+import renderScreen from './renderScreen.js';
 
 const game = createGame();
 const keyboardListener = createKeyboardListener();
 
-const socket = io();
+const socket = io("ws://localhost:3000");
 
 socket.on('connect', () => {
     const playerId = socket.id;
